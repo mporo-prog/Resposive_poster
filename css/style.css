@@ -1,0 +1,14 @@
+@import url(reset.css);
+@import url(fonts.css);
+h1{
+    font-family: 'Kucheryavy';
+}
+h2{
+    font-family: "Bebas Neue Cyrillic";
+}
+h3{
+    font-family: "Futura Demi";
+}
+h4{
+    font-family: "Futura Medium";
+}
