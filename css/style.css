@@ -2,13 +2,17 @@
 @import url(fonts.css);
 h1{
     font-family: 'Kucheryavy';
+    font-size: 112px;;
 }
 h2{
     font-family: "Bebas Neue Cyrillic";
+    font-size: 96px;
 }
 h3{
     font-family: "Futura Demi";
+    font-size: 220px;
 }
 h4{
     font-family: "Futura Medium";
+    font-size: 80px;
 }
