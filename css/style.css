@@ -14,7 +14,7 @@ section{
 }
 div{
     border-radius: 24px;
-    border: 26px solid;
+    border: 21px solid;
 }
 /* img{
     max-width: 60%;
@@ -72,10 +72,41 @@ div{
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
     width: 74vw;
     height: 17vw;
     background-color: #28160A;
     border-color: #E73928;
+    img{
+        height: 5vw;
+        width: auto;
+    }
+    div{
+        display: flex;
+        align-items: center;
+    }
+    h2{
+        color: #FCEFD6;
+        font-family: "geometria_bold";
+        font-size: 7vw;
+    }
+    p{
+        color: #E73928;
+        font-family: "Kucheryavy";
+        font-size: 4vw;
+    }
+}
+.leftArrow{
+    position: absolute;
+    bottom: 16px;
+    left: 20px;
+    rotate: 50deg;
+}
+.rightArrow{
+    position: absolute;
+    bottom: 16px;
+    right: 20px;
+    rotate: -50deg;
 }
 .paint{
     width: 38vw;
@@ -173,7 +204,6 @@ div{
     display: flex;
     flex-direction: column;
     gap: 8px;
-    position: relative;
     overflow: hidden;
     align-items: center;
     justify-content: center;
@@ -187,7 +217,7 @@ div{
     flex-direction: row;
     gap: 12px;
     overflow: hidden;
-    width: 100vw;
+    width: 2100px;
     div{
         border-radius: 24px;
         height: 196px;
@@ -200,7 +230,7 @@ div{
     flex-direction: row;
     gap: 9px;
     overflow: hidden;
-    width: 100vw;
+    width: 2100px;
     div{
         border-radius: 20%;
         height: 16px;
@@ -412,11 +442,21 @@ div{
     }
     div{
         border-radius: 16px;
-        border: 12px solid;
+        border: 17px solid;
     }
     .staging{
         width: 100vw;
         height: 25vw;
+        img{
+            height: 7vw;
+            width: auto;
+        }
+        h2{
+            font-size: 10vw;
+        }
+        p{
+            font-size: 6vw;
+        }
     }
     .masks{
         display: none;
@@ -428,7 +468,7 @@ div{
     .tape{
         width: 48vw;
         height: 24vw;
-        border: 9px solid;
+        border: 12px solid;
         border-color: #E5C441;
     }
     .card-row{
@@ -453,7 +493,7 @@ div{
     }
     div{
         border-radius: 10px;
-        border: 9px solid;
+        border: 12px solid;
     }
     .mobile{
         display: flex;
@@ -492,7 +532,7 @@ div{
     .tape{
         width: 100vw;
         height: 50vw;
-        border: 5px solid;
+        border: 8px solid;
         border-color: #E5C441;
     }
     .card-row{
