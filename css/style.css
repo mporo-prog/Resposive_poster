@@ -89,11 +89,13 @@ div{
         color: #FCEFD6;
         font-family: "geometria_bold";
         font-size: 7vw;
+        animation: theater-text 500ms linear infinite;
     }
     p{
         color: #E73928;
         font-family: "Kucheryavy";
         font-size: 4vw;
+        /* animation: theater-text 300ms linear infinite; */
     }
 }
 .leftArrow{
@@ -101,12 +103,14 @@ div{
     bottom: 16px;
     left: 20px;
     rotate: 50deg;
+    animation: left-arrow-rotate 1500ms linear infinite;
 }
 .rightArrow{
     position: absolute;
     bottom: 16px;
     right: 20px;
     rotate: -50deg;
+    animation: right-arrow-rotate 1500ms linear infinite;
 }
 .paint{
     width: 38vw;
@@ -243,7 +247,7 @@ div{
         width: 16px;
         background-color: #761614;
     }
-    animation: left-scroll 300ms linear infinite;
+    animation: left-scroll 500ms linear infinite;
     transition: all 2s ease;
 }
 .the-fourth-section{
@@ -340,6 +344,28 @@ div{
 }
 #paint-orange{
     background-color: #E73928;
+}
+@keyframes left-arrow-rotate{
+    0%{
+        rotate: 50deg;
+    }
+    50%{
+        rotate: 10deg;
+    }
+    100%{
+        rotate: 50deg;
+    }
+}
+@keyframes right-arrow-rotate{
+    0%{
+        rotate: -50deg;
+    }
+    50%{
+        rotate: -10deg;
+    }
+    100%{
+        rotate: -50deg;
+    }
 }
 @keyframes masks-scroll {
     0%{
