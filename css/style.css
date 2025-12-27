@@ -58,11 +58,11 @@ div{
     background-color: #E5C441;
     border-color: #761614;
     img{
-        height: 55vh;
+        height: 32vw;
         width: auto;
     }
     p{
-        font-size: 11vh;
+        font-size: 6vw;
         color: #761614;
         animation: theater-text 2s linear infinite;
     }
