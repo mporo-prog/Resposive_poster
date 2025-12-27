@@ -366,7 +366,7 @@ div{
     transform: translateY(0%)
     }
     100%{
-        transform: translateY(calc(50% + 12px))
+        transform: translateY(calc(50% + 8px))
     }
 }
 @keyframes left-scroll{
@@ -499,12 +499,6 @@ div{
     }
 }
 .tape-row:hover{
-    animation-play-state: paused
-}
-.bigAsset:hover{
-    animation-play-state: paused
-}
-.smallAsset:hover{
     animation-play-state: paused
 }
 #card-border-none-first:hover{
