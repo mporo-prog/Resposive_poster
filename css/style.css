@@ -208,6 +208,18 @@ div{
         background-color: #761614;
     }
 }
+.the-fourth-section{
+    display: flex;
+    flex-direction: row;
+    gap: 14px;
+    position: relative;
+    overflow: hidden;
+}
+.mobile{
+    display: flex;
+    flex-direction: row;
+    border: 0;
+    }
 #circle-orange{
     background-color: #E73928;
     animation: mask-rotate 5s linear infinite;
@@ -276,7 +288,7 @@ div{
         transform: translateY(calc(100% + 12px))
     }
 } */
-@keyframes theater-text{
+/* @keyframes theater-text{
     0%{
         opacity: 1;
     }
@@ -389,7 +401,103 @@ div{
     100%{
         rotate: 360deg;
     }
-}
+} */
 #card-border-none:hover{
     animation-play-state: paused
+}
+
+@media (max-width: 1024px) {
+    body{
+        gap: 8px;
+    }
+    div{
+        border-radius: 16px;
+        border: 12px solid;
+    }
+    .staging{
+        width: 100vw;
+        height: 25vw;
+    }
+    .masks{
+        display: none;
+    }
+    .paint{
+        width: 52vw;
+        height: 24vw;
+    }
+    .tape{
+        width: 48vw;
+        height: 24vw;
+        border: 9px solid;
+        border-color: #E5C441;
+    }
+    .card-row{
+        gap: 8px;
+    }
+    .the-third-section{
+        gap: 8px;
+    }
+    .the-fourth-section{
+        gap: 8px;
+    }
+    .card{
+        gap: 8px;
+    }
+}
+@media (max-width: 440px) {
+    body{
+        gap: 6px;
+    }
+    div{
+        border-radius: 10px;
+        border: 9px solid;
+    }
+    .mobile{
+        display: flex;
+        flex-direction: row;
+        gap: 6px;
+        border: 0;
+    }
+    .staging{
+        width: 100vw;
+        height: 25vw;
+    }
+    .masks{
+        display: none;
+    }
+    .tape{
+        border: 5px solid;
+        border-color: #E5C441;
+    }
+    .card-row{
+        gap: 6px;
+    }
+    .the-second-section{
+        gap: 6px;
+        flex-direction: column;
+    }
+    .jump-circle{
+        width: 50vw;
+        height: 100vw;
+    }
+    .the-third-section{
+        gap: 6px;
+        flex-direction: column;
+    }
+    .the-fourth-section{
+        gap: 6px;
+        flex-direction: column-reverse;
+    }
+    .card{
+        gap: 6px;
+        width: 100vw;
+        height: 100vw;
+    }
+    .circle{
+        width: 25vw;
+        height: 25vw;
+    }
+    #circle-blue-second{
+        display: none;
+    }
 }
