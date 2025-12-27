@@ -158,15 +158,14 @@ div{
     z-index: 4;
 }
 .the-third-section{
-    display: flex;
-    flex-direction: row;
-    gap: 14px;
     position: relative;
     overflow: hidden;
+    width: 100vw;
+    height: 50vw;
 }
 .card{
     width: 50vw;
-    height: 50vw;
+    height: 100vw;
     display: flex;
     flex-direction: column;
     gap: 12px;
@@ -203,10 +202,12 @@ div{
     height: 266px;
     display: flex;
     flex-direction: column;
+    position: relative;
     gap: 8px;
     overflow: hidden;
-    align-items: center;
-    justify-content: center;
+    padding: 11px 0;
+    align-items: flex-start;
+    justify-content: space-between;
     background-color: #E5C441;
     div{
         border: 0;
@@ -215,15 +216,20 @@ div{
 .tape-row{
     display: flex;
     flex-direction: row;
-    gap: 12px;
+    gap: 16px;
     overflow: hidden;
-    width: 2100px;
+    width: 2700px;
+    position: absolute;
+    left: -197px;
+    top: 35px;
     div{
         border-radius: 24px;
         height: 196px;
         width: 196px;
         background-color: #761614;
     }
+    animation: right-scroll 1s linear infinite;
+    transition: all 2s ease;
 }
 .square-row{
     display: flex;
@@ -237,8 +243,12 @@ div{
         width: 16px;
         background-color: #761614;
     }
+    animation: left-scroll 300ms linear infinite;
+    transition: all 2s ease;
 }
 .the-fourth-section{
+    width: 100vw;
+    height: 50vw;
     display: flex;
     flex-direction: row;
     gap: 14px;
@@ -286,14 +296,35 @@ div{
     border-color: #FCEFD6;
     background-color: #E73928;
 }
-#card-brown{
+#card-brown-first{
     background-color: #28160A;
     border-color: #FCEFD6;
+    height: 50vw;
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
-#card-border-none{
+#card-border-none-first{
     border: 0;
     animation: masks-scroll 5s linear infinite;
     transition: all 2s ease;
+    position: absolute;
+    bottom: 0;
+}
+#card-brown-second{
+    background-color: #28160A;
+    border-color: #FCEFD6;
+    height: 50vw;
+    position: absolute;
+    bottom: 0;
+}
+#card-border-none-second{
+    border: 0;
+    animation: masks-scroll 5s linear infinite;
+    transition: all 2s ease;
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
 #paint-red{
     background-color: #761614;
@@ -310,15 +341,31 @@ div{
 #paint-orange{
     background-color: #E73928;
 }
-/* @keyframes masks-scroll {
+@keyframes masks-scroll {
     0%{
     transform: translateY(0%)
     }
     100%{
-        transform: translateY(calc(100% + 12px))
+        transform: translateY(calc(50% + 12px))
     }
-} */
-/* @keyframes theater-text{
+}
+@keyframes left-scroll{
+    0%{
+        transform: translateX(0%)
+    }
+    100%{
+        transform: translateX(calc(-2% - 9px))
+    }
+}
+@keyframes right-scroll{
+    0%{
+        transform: translateX(0%)
+    }
+    100%{
+        transform: translateX(calc(4% + 100px))
+    }
+}
+@keyframes theater-text{
     0%{
         opacity: 1;
     }
@@ -431,11 +478,13 @@ div{
     100%{
         rotate: 360deg;
     }
-} */
+}
 #card-border-none:hover{
     animation-play-state: paused
 }
-
+.tape-row:hover{
+    animation-play-state: paused
+}
 @media (max-width: 1024px) {
     body{
         gap: 8px;
