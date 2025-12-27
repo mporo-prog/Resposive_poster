@@ -2,65 +2,335 @@
 @import url('fonts.css');
 body{
     width: 100vw;
-}
-section{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    gap: 30px;
-    height: 1080px;
-    background-color: yellow;
-}
-.div-jump-circle{
-    align-self: stretch;
-    width: 100%;
-    height: 100%;
-    background-color: red;
-    border-radius: 24px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-end;
-    gap: 100px;
-    div{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    background-color: #000;
+    gap: 10px;
+}
+section{
+    width: 100vw;
+}
+div{
+    border-radius: 24px;
+    border: 26px solid;
+}
+/* img{
+    max-width: 60%;
+    height: auto;
+} */
+/* p
+{
+    font-family: "geometria_bold";
+    font-size: 7vw;
+    color: #FCEFD6;
+} */
+.row{
+    border-radius: 0;
+    border: 0;
+    display: flex;
+    flex-direction: row;
+}
+.column{
+    border-radius: 0;
+    border: 0;
+    display: flex;
+    flex-direction: column;
+}
+.font-geometria{
+    font-family: "geometria_bold";
+    /* align-items: center; */
+}
+.the-first-section{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.masks{
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 26vw;
+    height: 40vw;
+    background-color: #E5C441;
+    border-color: #761614;
+    img{
+        height: 55vh;
+        width: auto;
     }
     p{
-        color: blue;
-        font-size: 48px;
-        align-items: center;
+        font-size: 11vh;
+        color: #761614;
+        animation: theater-text 2s linear infinite;
     }
 }
+.staging{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 74vw;
+    height: 20vw;
+    background-color: #28160A;
+    border-color: #E73928;
+}
+.paint{
+    width: 38vw;
+    height: 20vw;
+    background-color: #2A3596;
+    border-color: #FCEFD6;
+}
+.tape{
+    width: 36vw;
+    height: 20vw;
+    background-color: #E73928;
+    border: 16px solid;
+    border-color: #E5C441;
+}
 .circle{
-    margin-bottom: -68px;
-    z-index: 10;
-    width: 166px;
-    height: 166px;
+    display: flex;
+    width: 20vw;
+    height: 20vw;
     border-radius: 100%;
-    background-color: blue;
-    border: 4px solid #fff;
+    border: 0;
+    align-items: center;
+    justify-content: center;
+    img{
+        max-width: 60%;
+        height: auto;
+    }
 }
-.oval{
-    width: 250px;
-    height: 136px;
+.the-second-section{
+    display: flex;
+    flex-direction: row;
+}
+.jump-circle{
+    width: 25vw;
+    height: 60vw;
+}
+.the-third-section{
+    display: flex;
+    flex-direction: row;
+    gap: 14px;
+}
+.card{
+    width: 50vw;
+    height: 50vw;
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+.card-paint{
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+.card-row{
+    display: flex;
+    flex-direction: row;
+    border: 0;
+    height: 50%;
+    width: 100%;
+    gap: 12px;
+}
+.card-paint-border{
+    width: 100%;
+    height: 100%;
+    border: 0;
     border-radius: 100%;
-    background-color: blue;
 }
-/* h1{
-    font-family: 'Kucheryavy';
-    font-size: 112px;;
+.last-section{
+    height: 266px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    position: relative;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    background-color: #E5C441;
+    div{
+        border: 0;
+    }
 }
-h2{
-    font-family: "BebasNeueCyrillic";
-    font-size: 96px;
+.tape-row{
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    overflow: hidden;
+    width: 100vw;
+    div{
+        border-radius: 24px;
+        height: 196px;
+        width: 196px;
+        background-color: #761614;
+    }
 }
-h3{
-    font-family: "FuturaDemi";
-    font-size: 220px;
+.square-row{
+    display: flex;
+    flex-direction: row;
+    gap: 9px;
+    overflow: hidden;
+    width: 100vw;
+    div{
+        border-radius: 20%;
+        height: 16px;
+        width: 16px;
+        background-color: #761614;
+    }
 }
-h4{
-    font-family: "FuturaMedium";
-    font-size: 80px;
-} */
+#circle-orange{
+    background-color: #E73928;
+    animation: mask-rotate 6s linear infinite;
+}
+#circle-brown-first{
+    background-color: #28160A;
+    animation: first-arrow-rotate 6s linear infinite;
+}
+#circle-brown-second{
+    background-color: #28160A;
+    animation: second-arrow-rotate 6s linear infinite;
+}
+#circle-blue-first{
+    background-color: #2A3596;
+    animation: third-arrow-rotate 6s linear infinite;
+}
+#circle-blue-second{
+    background-color: #2A3596;
+    animation: fourth-arrow-rotate 6s linear infinite;
+}
+#the-first-jump{
+    border-color: #761614;
+    background-color: #E5C441;
+}
+#the-second-jump{
+    border-color: #FCEFD6;
+    background-color: #761614;
+}
+#the-third-jump{
+    border-color: #761614;
+    background-color: #FCEFD6;
+}
+#the-fourth-jump{
+    border-color: #FCEFD6;
+    background-color: #E73928;
+}
+#card-brown{
+    background-color: #28160A;
+    border-color: #FCEFD6;
+}
+#card-border-none{
+    border: 0;
+}
+#paint-red{
+    background-color: #761614;
+}
+#paint-yellow{
+    background-color: #E5C441;
+}
+#paint-blue{
+    background-color: #2A3596;
+}
+#paint-white{
+    background-color: #FCEFD6;
+}
+
+@keyframes theater-text{
+    0%{
+        opacity: 1;
+    }
+    20%{
+        opacity: 7.5;
+    }
+    40%{
+        opacity: 5;
+    }
+    60%{
+        opacity: 2.5;
+    }
+    80%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes mask-rotate {
+    0%{
+        rotate: 0deg;
+    }
+    25%{
+        rotate: 90deg;
+    }
+    45%{
+        rotate: 180deg;
+    }
+    65%{
+        rotate: 270deg;
+    }
+    90%{
+        rotate: 360deg;
+    }
+    100%{
+        rotate: 360deg;
+    }
+    
+}
+@keyframes first-arrow-rotate {
+    66%{
+        rotate: 0deg;
+    }
+    88%{
+        rotate: -90deg;
+    }
+    94%{
+        rotate: -90deg;
+    }
+    100%{
+        rotate: 0deg;
+    }
+}
+@keyframes third-arrow-rotate {
+    44%{
+        rotate: 0deg;
+    }
+    66%{
+        rotate: -90deg;
+    }
+    94%{
+        rotate: -90deg;
+    }
+    100%{
+        rotate: 0deg;
+    }
+}
+@keyframes second-arrow-rotate {
+    22%{
+        rotate: 0deg;
+    }
+    44%{
+        rotate: -90deg;
+    }
+    94%{
+        rotate: -90deg;
+    }
+    100%{
+        rotate: 0deg;
+    }
+}
+@keyframes fourth-arrow-rotate {
+    0%{
+        rotate: 0deg;
+    }
+    22%{
+        rotate: -90deg;
+    }
+    94%{
+        rotate: -90deg;
+    }
+    100%{
+        rotate: 0deg;
+    }
+}
