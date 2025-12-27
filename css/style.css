@@ -366,7 +366,7 @@ div{
     transform: translateY(0%)
     }
     100%{
-        transform: translateY(calc(50% + 8px))
+        transform: translateY(calc(50% + 5px))
     }
 }
 @keyframes left-scroll{
@@ -498,6 +498,14 @@ div{
         rotate: 360deg;
     }
 }
+@keyframes masks-scroll-mobile {
+    0%{
+    transform: translateY(0%)
+    }
+    100%{
+        transform: translateY(calc(100% + 12px))
+    }
+}
 .tape-row:hover{
     animation-play-state: paused
 }
@@ -572,6 +580,9 @@ div{
         gap: 6px;
         border: 0;
     }
+    .the-first-section{
+        gap: 0;
+    }
     .staging{
         display: none;
     }
@@ -618,14 +629,6 @@ div{
         height: 100vw;
         padding: 9px;
     }
-    .the-third-section{
-        gap: 6px;
-        flex-direction: column;
-    }
-    .the-fourth-section{
-        gap: 6px;
-        flex-direction: column-reverse;
-    }
     .card{
         gap: 6px;
         width: 100vw;
@@ -640,6 +643,22 @@ div{
         flex-direction: column;
         gap: 6px;
     }
+    .the-third-section{
+        width: 100vw;
+        height: 200vw;
+    }
+    .the-fourth-section{
+        width: 100vw;
+        height: 200vw;
+    }
+    .card-paint{
+        width: 50vw;
+        height: 50vw;
+    }
+    .card-paint-border{
+        width: 50vw;
+        height: 50vw;
+    }
     #circle-blue-second{
         display: none;
     }
@@ -648,5 +667,36 @@ div{
     }
     #circle-brown-second{
         display: none;
+    }
+    #circle-brown-first{
+        display: none;
+    }
+    #circle-orange{
+        display: none;
+    }
+    #card-border-none-first{
+        height: 100vw;
+        position: absolute;
+        top: calc(-100vw - 12px);
+        animation: masks-scroll-mobile 5s linear infinite;
+    }
+    #card-brown-first{
+        height: 100vw;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+    #card-brown-second{
+        height: 100vw;
+        position: absolute;
+        bottom: 0;
+        z-index: 100;
+    }
+    #card-border-none-second{
+        height: 100vw;
+        animation: masks-scroll-mobile 5s linear infinite;
+        position: absolute;
+        top: calc(-100vw - 12px);
+        left: 0;
     }
 }
