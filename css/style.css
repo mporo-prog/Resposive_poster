@@ -283,6 +283,46 @@ div{
     flex-direction: row;
     border: 0;
 }
+.main{
+    position: absolute;
+    top: 6%;
+}
+.roles{
+    position: absolute;
+    top: 23%;
+}
+.brown-main-animation{
+    border: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 50%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    overflow: hidden;
+    div{
+        border: 0;
+    }
+}
+.gapSix{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5vw;
+    align-items: center;
+}
+.gap15{
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+    align-items: center;
+}
+.goAnimation{
+    display: flex;
+    flex-direction: column;
+    gap: 4vw;
+    animation: textTop1 4s linear infinite;
+}
 #paint-circle-first{
     top: 5px;
     left: 5px;
@@ -358,11 +398,25 @@ div{
     bottom: 0;
 }
 #card-brown-second{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: #28160A;
     border-color: #FCEFD6;
     height: 50vw;
     position: absolute;
     bottom: 0;
+    h2{
+        font-family: "Kucheryavy";
+        font-size: 8vw;
+        color: #E5C441;
+    }
+    p{
+        font-family: "BebasNeueCyrillic";
+        font-size: 4vw;
+        color: #FCEFD6;
+    }
 }
 #card-border-none-second{
     border: 0;
@@ -386,6 +440,22 @@ div{
 }
 #paint-orange{
     background-color: #E73928;
+}
+@keyframes textTop1 {
+    0%{
+        transform: translateY(0%)
+    }
+    100%{
+        transform: translateY(calc(-30% - 3vw))
+    }
+}
+@keyframes textTop2 {
+    0%{
+        transform: translateY(0%)
+    }
+    100%{
+        transform: translateY(calc(-30% - 6vw))
+    }
 }
 @keyframes left-arrow-rotate{
     0%{
@@ -743,6 +813,24 @@ div{
         width: 50vw;
         height: 50vw;
     }
+    .main{
+        position: absolute;
+        top: 6%;
+    }
+    .roles{
+        position: absolute;
+        top: 22%;
+    }
+    .gapSix{
+        gap: 1vw;
+    }
+    .gap15{
+        gap: 4vw;
+    }
+    .goAnimation{
+        gap: 8vw;
+        animation: textTop2 4s linear infinite;
+    }
     #paint-circle-first{
         top: 2px;
         left: 2px;
@@ -791,6 +879,12 @@ div{
         position: absolute;
         bottom: 0;
         z-index: 100;
+        h2{
+            font-size: 14vw;
+        }
+        p{
+            font-size: 8vw;
+        }
     }
     #card-border-none-second{
         height: 100vw;
