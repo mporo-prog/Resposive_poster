@@ -105,6 +105,31 @@ div{
     height: 19vw;
     background-color: #2A3596;
     border-color: #FCEFD6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    gap: 3px;
+    overflow: hidden;
+    p{
+        font-family: "geometria_bold";
+        font-size: 6vw;
+        color: #2A3596;
+        -webkit-text-stroke: #FCEFD6 6px;
+        z-index: 100;
+    }
+    img{
+        position: absolute;
+    }
+}
+.paint-circle{
+    width: 6vw;
+    height: auto;
+}
+.paint-ticket{
+    width: 10vw;
+    height: auto;
 }
 .tape{
     width: 36vw;
@@ -257,6 +282,29 @@ div{
     display: flex;
     flex-direction: row;
     border: 0;
+}
+#paint-circle-first{
+    top: 5px;
+    left: 5px;
+    rotate: -30deg;
+}
+#paint-circle-second{
+    bottom: 5px;
+    right: 5px;
+    rotate: 30deg;
+}
+#paint-ticket-first{
+    top: 15px;
+    right: 5px;
+    rotate: 28deg;
+}
+#paint-ticket-second{
+    bottom: 15px;
+    left: 5px;
+    rotate: -146deg;
+}
+#paint-ticket-thrid{
+    rotate: -13deg;
 }
 #circle-orange{
     background-color: #E73928;
@@ -543,6 +591,16 @@ div{
     .paint{
         width: 52vw;
         height: 24vw;
+        p{
+            font-size: 7vw;
+            -webkit-text-stroke: #FCEFD6 4px;
+        }
+    }
+    .paint-circle{
+        width: 8vw;
+    }
+    .paint-ticket{
+        width: 12vw;
     }
     .tape{
         width: 48vw;
@@ -564,6 +622,22 @@ div{
     }
     .jump-circle{
         padding: 15px;
+    }
+    #paint-circle-first{
+        top: 3px;
+        left: 3px;
+    }
+    #paint-circle-second{
+        bottom: 3px;
+        right: 3px;
+    }
+    #paint-ticket-first{
+        top: 10px;
+        right: 3px;
+    }
+    #paint-ticket-second{
+        bottom: 10px;
+        left: 3px;
     }
 }
 @media (max-width: 440px) {
@@ -610,6 +684,16 @@ div{
     .paint{
         width: 100vw;
         height: 50vw;
+        p{
+            font-size: 15vw;
+            -webkit-text-stroke: #FCEFD6 4px;
+        }
+    }
+    .paint-circle{
+        width: 16vw;
+    }
+    .paint-ticket{
+        width: 24vw;
     }
     .tape{
         width: 100vw;
@@ -658,6 +742,22 @@ div{
     .card-paint-border{
         width: 50vw;
         height: 50vw;
+    }
+    #paint-circle-first{
+        top: 2px;
+        left: 2px;
+    }
+    #paint-circle-second{
+        bottom: 2px;
+        right: 2px;
+    }
+    #paint-ticket-first{
+        top: 7px;
+        right: 2px;
+    }
+    #paint-ticket-second{
+        bottom: 7px;
+        left: 2px;
     }
     #circle-blue-second{
         display: none;
