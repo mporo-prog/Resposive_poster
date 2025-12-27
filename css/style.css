@@ -443,6 +443,9 @@ div{
     .card{
         gap: 8px;
     }
+    .jump-circle{
+        padding: 15px;
+    }
 }
 @media (max-width: 440px) {
     body{
@@ -459,13 +462,36 @@ div{
         border: 0;
     }
     .staging{
-        width: 100vw;
-        height: 25vw;
-    }
-    .masks{
         display: none;
     }
+    .masks{
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+        height: 120vw;
+        background-color: #E5C441;
+        border-color: #761614;
+        img{
+            height: 110vw;
+            width: auto;
+        }
+        p{
+            font-size: 20vw;
+            color: #761614;
+            animation: theater-text 2s linear infinite;
+        }
+    }
+    .paint{
+        width: 100vw;
+        height: 50vw;
+    }
     .tape{
+        width: 100vw;
+        height: 50vw;
         border: 5px solid;
         border-color: #E5C441;
     }
@@ -479,6 +505,7 @@ div{
     .jump-circle{
         width: 50vw;
         height: 100vw;
+        padding: 9px;
     }
     .the-third-section{
         gap: 6px;
@@ -494,10 +521,21 @@ div{
         height: 100vw;
     }
     .circle{
-        width: 25vw;
-        height: 25vw;
+        width: 50vw;
+        height: 50vw;
+    }
+    .column-mobile{
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
     }
     #circle-blue-second{
+        display: none;
+    }
+    #circle-blue-first{
+        display: none;
+    }
+    #circle-brown-second{
         display: none;
     }
 }
