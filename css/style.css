@@ -614,12 +614,12 @@ div{
     }
     33%{
         top: 15%;
-        left: 58%;
+        left: 60%;
         rotate: -192deg;
     }
     57%{
         top: 70%;
-        left: 58%;
+        left: 60%;
         rotate: -282deg;
     }
     76%{
@@ -631,12 +631,12 @@ div{
 @keyframes ticketAround2 {
     0%, 100%{
         top: 15%;
-        left: 58%;
+        left: 60%;
         rotate: -168deg;
     }
     24%{
         top: 70%;
-        left: 58%;
+        left: 60%;
         rotate: -258deg;
     }
     41%{
@@ -658,7 +658,7 @@ div{
 @keyframes ticketAround3 {
     0%, 100%{
         top: 70%;
-        left: 58%;
+        left: 60%;
         rotate: 170deg;
     }
     16%{
@@ -678,7 +678,7 @@ div{
     }
     76%{
         top: 15%;
-        left: 58%;
+        left: 60%;
         rotate: 350deg;
     }
 }
@@ -690,12 +690,12 @@ div{
     }
     14%{
         top: 15%;
-        left: 58%;
+        left: 60%;
         rotate: -258deg;
     }
     36%{
         top: 70%;
-        left: 58%;
+        left: 60%;
         rotate: -348deg;
     }
     61%{
@@ -727,12 +727,12 @@ div{
     }
     52%{
         top: 15%;
-        left: 58%;
+        left: 60%;
         rotate: 277deg;
     }
     76%{
         top: 70%;
-        left: 58%;
+        left: 60%;
         rotate: 187deg;
     }
 }
