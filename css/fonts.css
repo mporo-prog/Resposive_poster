@@ -6,20 +6,6 @@
 }
 
 @font-face {
-    font-family: "FuturaDemi";
-    src: url('../fonts/FTR65.otf') format('opentype');
-    font-weight: 1000;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "FuturaMedium";
-    src: url('../fonts/FTR55.otf') format('opentype');
-    font-weight: 700;
-    font-style: normal;
-}
-
-@font-face {
     font-family: "geometria_bold";
     src: url('../fonts/geometria_bold.otf') format('opentype');
     font-weight: 1000;
