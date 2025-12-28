@@ -118,6 +118,7 @@ div{
         color: #2A3596;
         -webkit-text-stroke: #FCEFD6 6px;
         z-index: 100;
+        animation: text-stroke-color 1s linear infinite;
     }
     img{
         position: absolute;
@@ -386,14 +387,17 @@ div{
     top: 15px;
     right: 5px;
     rotate: 28deg;
+    animation: ticket-first-rotate 2s linear infinite;
 }
 #paint-ticket-second{
     bottom: 15px;
     left: 5px;
     rotate: -146deg;
+    animation: ticket-second-rotate 2s linear infinite;
 }
 #paint-ticket-thrid{
-    rotate: -13deg;
+    rotate: -17deg;
+    animation: ticket-third-rotate 2s linear infinite;
 }
 #circle-orange{
     background-color: #E73928;
@@ -500,6 +504,50 @@ div{
     background-color: #E73928;
     h1, h2, h3, p{
         color: #FCEFD6;
+    }
+}
+@keyframes text-stroke-color {
+    0%{
+        -webkit-text-stroke-color: #FCEFD6;
+    }
+    50%{
+        -webkit-text-stroke-color: #2A3596;
+    }
+    100%{
+        -webkit-text-stroke-color: #FCEFD6;
+    }
+}
+@keyframes ticket-first-rotate {
+    0%{
+        rotate: 28deg;
+    }
+    50%{
+        rotate: -28deg;
+    }
+    100%{
+        rotate: 28deg;
+    }
+}
+@keyframes ticket-second-rotate {
+    0%{
+        rotate: -146deg;
+    }
+    50%{
+        rotate: -190deg;
+    }
+    100%{
+        rotate: -146deg;
+    }
+}
+@keyframes ticket-third-rotate {
+    0%{
+        rotate: -17eg;
+    }
+    50%{
+        rotate: 17deg;
+    }
+    100%{
+        rotate: -17deg;
     }
 }
 @keyframes textTop1 {
