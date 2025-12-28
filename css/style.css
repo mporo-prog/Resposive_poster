@@ -182,7 +182,7 @@ div{
     width: auto;
     margin-bottom: -25%;
     z-index: 4;
-    animation: jump 4s linear infinite;
+    animation: jump 2s linear infinite;
 }
 .the-third-section{
     position: relative;
@@ -755,7 +755,10 @@ div{
     0%{
         margin-bottom: -25%;
     }
-    49%, 50%, 51%{
+    49%, 51%{
+        transform: translateY(calc(-209%))
+    }
+    50%{
         transform: translateY(calc(-210%))
     }
     100%{
@@ -766,7 +769,10 @@ div{
     0%{
         margin-bottom: -20%;
     }
-    49%, 50%, 51%{
+    49%, 51%{
+        transform: translateY(calc(-209%))
+    }
+    50%{
         transform: translateY(calc(-210%))
     }
     100%{
@@ -1011,7 +1017,7 @@ div{
     }
     .circle-jump{
         padding-bottom: -20%;
-        animation: jump-mobile 4s linear infinite;
+        animation: jump-mobile 2s linear infinite;
     }
     #paint-circle-first{
         top: 2px;
