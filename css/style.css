@@ -383,6 +383,13 @@ div{
     gap: 0.5vw;
     align-items: center;
 }
+.card-border-radius{
+    border: 0;
+    width: 100%;
+    height: 50%;
+    overflow: hidden;
+    border-radius: 50%;
+}
 .gap15{
     display: flex;
     flex-direction: column;
@@ -398,17 +405,53 @@ div{
 .tape-row-first{
     display: flex;
     flex-direction: row;
-    gap: 2%;
+    justify-content: space-around;
     align-items: center;
     overflow: hidden;
-    width: 1000px;
+    width: 100%;
     div{
         height: 11vw;
         width: 10vw;
         background-color: #FCEFD6;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img{
+            max-width: 60%;
+            height: auto;
+            animation: masks-jump 1s linear infinite;
+        }
     }
-    animation: left-scroll-first 1s linear infinite;
-    transition: all 2s ease;
+}
+.firstTicket{
+    top: 15%;
+    left: 6%;
+    rotate: -12deg;
+    animation: ticketAround1 7s linear infinite;
+}
+.secondTicket{
+    top: 15%;
+    right: 6%;
+    rotate: -168deg;
+    animation: ticketAround2 7s linear infinite;
+}
+.thirdTicket{
+    bottom: 15%;
+    right: 6%;
+    rotate: 170deg;
+    animation: ticketAround3 7s linear infinite;
+}
+.fourthTicket{
+    top: 40%;
+    left: 35%;
+    rotate: -168deg;
+    animation: ticketAround4 7s linear infinite;
+}
+.fifthTicket{
+    bottom: 15%;
+    left: 6%;
+    rotate: 7deg;
+    animation: ticketAround5 7s linear infinite;
 }
 #square-row-white{
     div{
@@ -488,6 +531,12 @@ div{
     position: absolute;
     bottom: 0;
     right: 0;
+    img{
+        width: 17vw;
+        height: auto;
+        position: absolute;
+    }
+    transition: all 2s ease;
 }
 #card-border-none-first{
     border: 0;
@@ -550,6 +599,152 @@ div{
     background-color: #E73928;
     h1, h2, h3, p{
         color: #FCEFD6;
+    }
+}
+@keyframes ticketAround1 {
+    0%, 100%{
+        top: 15%;
+        left: 6%;
+        rotate: -12deg;
+    }
+    16%{
+        top: 40%;
+        left: 35%;
+        rotate: -102deg;
+    }
+    33%{
+        top: 15%;
+        left: 58%;
+        rotate: -192deg;
+    }
+    57%{
+        top: 70%;
+        left: 58%;
+        rotate: -282deg;
+    }
+    76%{
+        top: 70%;
+        left: 6%;
+        rotate: -192deg;
+    }
+}
+@keyframes ticketAround2 {
+    0%, 100%{
+        top: 15%;
+        left: 58%;
+        rotate: -168deg;
+    }
+    24%{
+        top: 70%;
+        left: 58%;
+        rotate: -258deg;
+    }
+    41%{
+        top: 70%;
+        left: 6%;
+        rotate: -348deg;
+    }
+    65%{
+        top: 15%;
+        left: 6%;
+        rotate: -438deg;
+    }
+    81%{
+        top: 40%;
+        left: 35%;
+        rotate: -348deg;
+    }
+}
+@keyframes ticketAround3 {
+    0%, 100%{
+        top: 70%;
+        left: 58%;
+        rotate: 170deg;
+    }
+    16%{
+        top: 70%;
+        left: 6%;
+        rotate: 260deg;
+    }
+    40%{
+        top: 15%;
+        left: 6%;
+        rotate: 350deg;
+    }
+    54%{
+        top: 40%;
+        left: 15%;
+        rotate: 440deg;
+    }
+    76%{
+        top: 15%;
+        left: 58%;
+        rotate: 350deg;
+    }
+}
+@keyframes ticketAround4 {
+    0%, 100%{
+        top: 40%;
+        left: 35%;
+        rotate: -168deg;
+    }
+    14%{
+        top: 15%;
+        left: 58%;
+        rotate: -258deg;
+    }
+    36%{
+        top: 70%;
+        left: 58%;
+        rotate: -348deg;
+    }
+    61%{
+        top: 70%;
+        left: 6%;
+        rotate: -438deg;
+    }
+    83%{
+        top: 15%;
+        left: 6%;
+        rotate: -348deg;
+    }
+}
+@keyframes ticketAround5 {
+    0%, 100%{
+        top: 70%;
+        left: 6%;
+        rotate: 7deg;
+    }
+    24%{
+        top: 15%;
+        left: 6%;
+        rotate: 97deg;
+    }
+    40%{
+        top: 40%;
+        left: 35%;
+        rotate: 187deg;
+    }
+    52%{
+        top: 15%;
+        left: 58%;
+        rotate: 277deg;
+    }
+    76%{
+        top: 70%;
+        left: 58%;
+        rotate: 187deg;
+    }
+}
+@keyframes masks-jump {
+    0%, 100%{
+        transform: translateY(0%);
+    }
+    25%{
+        transform: translateY(-5%);
+    }
+    75%{
+        transform: translateY(5%);
     }
 }
 @keyframes text-stroke-color {
@@ -640,14 +835,6 @@ div{
     }
     100%{
         transform: translateY(calc(50% + 5px))
-    }
-}
-@keyframes left-scroll-first {
-    0%{
-        transform: translateX(0%)
-    }
-    100%{
-        transform: translateX(calc(-30%))
     }
 }
 @keyframes left-scroll{
@@ -824,6 +1011,11 @@ div{
 #card-border-none-second:hover{
     animation-play-state: paused
 }
+#card-brown-first:hover{
+    img{
+        animation-play-state: paused
+    }
+}
 @media (max-width: 1024px) {
     body{
         gap: 8px;
@@ -874,6 +1066,15 @@ div{
     }
     .the-third-section{
         gap: 8px;
+    }
+    .tape-row-first{
+        div{
+            height: 13vw;
+            width: 13vw;
+            img{
+                max-width: 55%;
+            }
+        }
     }
     .the-fourth-section{
         gap: 8px;
@@ -982,6 +1183,36 @@ div{
             font-size: 4.5vw;
         }
     }
+    /* .firstTicket{
+        top: 15%;
+        left: 6%;
+        rotate: -12deg;
+        animation: ticketAround1 7s linear infinite;
+    }
+    .secondTicket{
+        top: 15%;
+        right: 6%;
+        rotate: -168deg;
+        animation: ticketAround2 7s linear infinite;
+    }
+    .thirdTicket{
+        bottom: 15%;
+        right: 6%;
+        rotate: 170deg;
+        animation: ticketAround3 7s linear infinite;
+    }
+    .fourthTicket{
+        top: 40%;
+        left: 35%;
+        rotate: -168deg;
+        animation: ticketAround4 7s linear infinite;
+    }
+    .fifthTicket{
+        bottom: 15%;
+        left: 6%;
+        rotate: 7deg;
+        animation: ticketAround5 7s linear infinite;
+    } */
     .card{
         gap: 6px;
         width: 100vw;
@@ -1032,6 +1263,15 @@ div{
     .card-paint-border{
         width: 50vw;
         height: 50vw;
+    }
+    .tape-row-first{
+        div{
+            height: 28vw;
+            width: 25vw;
+            img{
+                max-width: 70;
+            }
+        }
     }
     .main{
         position: absolute;
@@ -1097,6 +1337,9 @@ div{
         position: absolute;
         bottom: 0;
         left: 0;
+        img{
+            width: 30vw;
+        }
     }
     #card-brown-second{
         height: 100vw;
