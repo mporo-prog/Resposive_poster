@@ -544,12 +544,14 @@ div {
     position: absolute;
     border: 21px dotted;
     z-index: 100;
+    border-radius: 100%;
 }
 
 .circle-lights {
     width: 25vw;
     height: 60vw;
     border: 21px dotted;
+    border-radius: 100%;
 }
 
 .gap-lights1 {
