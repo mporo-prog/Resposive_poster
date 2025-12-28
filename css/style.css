@@ -1,6 +1,7 @@
 @import url('reset.css');
 @import url('fonts.css');
-body{
+
+body {
     width: 100vw;
     display: flex;
     flex-direction: column;
@@ -8,35 +9,43 @@ body{
     background-color: #000;
     gap: 10px;
     overflow-x: hidden;
+    position: relative;
 }
-section{
+
+section {
     width: 100vw;
 }
-div{
+
+div {
     border-radius: 24px;
     border: 21px solid;
 }
-.row{
+
+.row {
     border-radius: 0;
     border: 0;
     display: flex;
     flex-direction: row;
 }
-.column{
+
+.column {
     border-radius: 0;
     border: 0;
     display: flex;
     flex-direction: column;
 }
-.font-geometria{
+
+.font-geometria {
     font-family: "geometria_bold";
 }
-.the-first-section{
+
+.the-first-section {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
-.masks{
+
+.masks {
     position: relative;
     overflow: hidden;
     display: flex;
@@ -47,17 +56,20 @@ div{
     height: 36vw;
     background-color: #E5C441;
     border-color: #761614;
-    img{
+
+    img {
         height: 32vw;
         width: auto;
     }
-    p{
+
+    p {
         font-size: 6vw;
         color: #761614;
         animation: theater-text 2s linear infinite;
     }
 }
-.staging{
+
+.staging {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -66,41 +78,48 @@ div{
     height: 17vw;
     background-color: #28160A;
     border-color: #E73928;
-    img{
+
+    img {
         height: 5vw;
         width: auto;
     }
-    div{
+
+    div {
         display: flex;
         align-items: center;
     }
-    h2{
+
+    h2 {
         color: #FCEFD6;
         font-family: "geometria_bold";
         font-size: 7vw;
         animation: theater-text 500ms linear infinite;
     }
-    p{
+
+    p {
         color: #E73928;
         font-family: "Kucheryavy";
         font-size: 4vw;
     }
 }
-.leftArrow{
+
+.leftArrow {
     position: absolute;
     bottom: 16px;
     left: 20px;
     rotate: 50deg;
     animation: left-arrow-rotate 1500ms linear infinite;
 }
-.rightArrow{
+
+.rightArrow {
     position: absolute;
     bottom: 16px;
     right: 20px;
     rotate: -50deg;
     animation: right-arrow-rotate 1500ms linear infinite;
 }
-.paint{
+
+.paint {
     width: 38vw;
     height: 19vw;
     background-color: #2A3596;
@@ -112,7 +131,8 @@ div{
     position: relative;
     gap: 3px;
     overflow: hidden;
-    p{
+
+    p {
         font-family: "geometria_bold";
         font-size: 6vw;
         color: #2A3596;
@@ -120,19 +140,23 @@ div{
         z-index: 100;
         animation: text-stroke-color 1s linear infinite;
     }
-    img{
+
+    img {
         position: absolute;
     }
 }
-.paint-circle{
+
+.paint-circle {
     width: 6vw;
     height: auto;
 }
-.paint-ticket{
+
+.paint-ticket {
     width: 10vw;
     height: auto;
 }
-.tape{
+
+.tape {
     width: 36vw;
     height: 19vw;
     background-color: #E73928;
@@ -144,11 +168,13 @@ div{
     justify-content: space-between;
     padding-top: 1%;
     padding-bottom: 1%;
-    div{
+
+    div {
         border: 0;
     }
 }
-.circle{
+
+.circle {
     display: flex;
     width: 20vw;
     height: 20vw;
@@ -156,16 +182,20 @@ div{
     border: 0;
     align-items: center;
     justify-content: center;
-    img{
+
+    img {
         max-width: 60%;
         height: auto;
     }
 }
-.the-second-section{
+
+.the-second-section {
     display: flex;
     flex-direction: row;
+    position: relative;
 }
-.jump-circle{
+
+.jump-circle {
     position: relative;
     display: flex;
     align-items: center;
@@ -174,7 +204,8 @@ div{
     width: 25vw;
     height: 60vw;
     padding-bottom: 10%;
-    p{
+
+    p {
         font-family: "geometria_bold";
         font-size: 2vw;
         position: absolute;
@@ -182,31 +213,36 @@ div{
         left: 3%;
     }
 }
-.ellipse{
+
+.ellipse {
     height: 18%;
     width: auto;
 }
-.circle-jump{
+
+.circle-jump {
     height: 25%;
     width: auto;
     margin-bottom: -25%;
     z-index: 4;
     animation: jump 2s linear infinite;
 }
-.the-third-section{
+
+.the-third-section {
     position: relative;
     overflow: hidden;
     width: 100vw;
     height: 50vw;
 }
-.card{
+
+.card {
     width: 50vw;
     height: 100vw;
     display: flex;
     flex-direction: column;
     gap: 12px;
 }
-.card-paint{
+
+.card-paint {
     width: 100%;
     height: 100%;
     border: 0;
@@ -214,53 +250,64 @@ div{
     flex-direction: column;
     justify-content: space-between;
     padding: 2%;
-    div{
+
+    div {
         border: 0;
     }
 }
-.card-paint-top{
+
+.card-paint-top {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    h2{
+
+    h2 {
         font-family: "Kucheryavy";
         font-size: 7vw;
     }
-    h3{
+
+    h3 {
         font-family: "Kucheryavy";
         font-size: 2.5vw;
     }
-    p{
+
+    p {
         font-family: "BebasNeueCyrillic";
         font-size: 2.5vw;
     }
 }
-.card-paint-top-in{
+
+.card-paint-top-in {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 2%;
 }
-.card-paint-center{
+
+.card-paint-center {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 3%;
-    h1{
+
+    h1 {
         font-family: "Kucheryavy";
         font-size: 6vw;
     }
 }
-.card-paint-bottom{
+
+.card-paint-bottom {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    p{
+
+    p {
         font-family: "BebasNeueCyrillic";
         font-size: 2vw;
     }
 }
-.card-row{
+
+.card-row {
     display: flex;
     flex-direction: row;
     border: 0;
@@ -268,7 +315,8 @@ div{
     width: 100%;
     gap: 12px;
 }
-.card-paint-border{
+
+.card-paint-border {
     width: 100%;
     height: 100%;
     border: 0;
@@ -277,19 +325,22 @@ div{
     align-items: center;
     justify-content: center;
 }
-.bigAsset{
+
+.bigAsset {
     max-width: 75%;
     height: auto;
     animation: masks-rotate 5s linear infinite;
     transition: all 2s ease;
 }
-.smallAsset{
+
+.smallAsset {
     max-width: 60%;
     height: auto;
     animation: masks-rotate 5s linear infinite;
     transition: all 2s ease;
 }
-.last-section{
+
+.last-section {
     height: 266px;
     display: flex;
     flex-direction: column;
@@ -300,11 +351,13 @@ div{
     align-items: flex-start;
     justify-content: space-between;
     background-color: #E5C441;
-    div{
+
+    div {
         border: 0;
     }
 }
-.tape-row{
+
+.tape-row {
     display: flex;
     flex-direction: row;
     gap: 16px;
@@ -313,30 +366,36 @@ div{
     position: absolute;
     left: -197px;
     top: 35px;
-    div{
+
+    div {
         height: 196px;
         width: 196px;
         background-color: #761614;
     }
+
     animation: right-scroll 1s linear infinite;
     transition: all 2s ease;
 }
-.square-row{
+
+.square-row {
     display: flex;
     flex-direction: row;
     gap: 9px;
     overflow: hidden;
     width: 2100px;
-    div{
+
+    div {
         border-radius: 20%;
         height: 16px;
         width: 16px;
         background-color: #761614;
     }
+
     animation: left-scroll 500ms linear infinite;
     transition: all 2s ease;
 }
-.the-fourth-section{
+
+.the-fourth-section {
     width: 100vw;
     height: 50vw;
     display: flex;
@@ -345,7 +404,8 @@ div{
     position: relative;
     overflow: hidden;
 }
-.card-opacity{
+
+.card-opacity {
     border: 0;
     width: 100%;
     height: 20%;
@@ -353,25 +413,30 @@ div{
     opacity: 90%;
     z-index: 100;
 }
-.mobile{
+
+.mobile {
     display: flex;
     flex-direction: row;
     border: 0;
 }
-.mobile-reverse{
+
+.mobile-reverse {
     display: flex;
     flex-direction: row;
     border: 0;
 }
-.main{
+
+.main {
     position: absolute;
     top: 6%;
 }
-.roles{
+
+.roles {
     position: absolute;
     top: 23%;
 }
-.brown-main-animation{
+
+.brown-main-animation {
     border: 0;
     display: flex;
     flex-direction: column;
@@ -381,187 +446,298 @@ div{
     position: absolute;
     bottom: 0;
     overflow: hidden;
-    div{
+
+    div {
         border: 0;
     }
 }
-.gapSix{
+
+.gapSix {
     display: flex;
     flex-direction: column;
     gap: 0.5vw;
     align-items: center;
 }
-.card-border-radius{
+
+.card-border-radius {
     border: 0;
     width: 100%;
     height: 50%;
     overflow: hidden;
     border-radius: 50%;
 }
-.gap15{
+
+.gap15 {
     display: flex;
     flex-direction: column;
     gap: 2vw;
     align-items: center;
 }
-.goAnimation{
+
+.goAnimation {
     display: flex;
     flex-direction: column;
     gap: 4vw;
     animation: textTop1 4s linear infinite;
 }
-.tape-row-first{
+
+.tape-row-first {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
     overflow: hidden;
     width: 100%;
-    div{
+
+    div {
         height: 11vw;
         width: 10vw;
         background-color: #FCEFD6;
         display: flex;
         align-items: center;
         justify-content: center;
-        img{
+
+        img {
             max-width: 60%;
             height: auto;
             animation: masks-jump 1s linear infinite;
         }
     }
 }
-.firstTicket{
+
+.firstTicket {
     top: 15%;
     left: 6%;
     rotate: -12deg;
     animation: ticketAround1 7s linear infinite;
 }
-.secondTicket{
+
+.secondTicket {
     top: 15%;
     right: 6%;
     rotate: -168deg;
     animation: ticketAround2 7s linear infinite;
 }
-.thirdTicket{
+
+.thirdTicket {
     bottom: 15%;
     right: 6%;
     rotate: 170deg;
     animation: ticketAround3 7s linear infinite;
 }
-.fourthTicket{
+
+.fourthTicket {
     top: 40%;
     left: 35%;
     rotate: -168deg;
     animation: ticketAround4 7s linear infinite;
 }
-.fifthTicket{
+
+.fifthTicket {
     bottom: 15%;
     left: 6%;
     rotate: 7deg;
     animation: ticketAround5 7s linear infinite;
 }
-#square-row-white{
-    div{
+
+.lights {
+    position: absolute;
+    border: 21px dotted;
+    z-index: 100;
+}
+
+.circle-lights {
+    width: 25vw;
+    height: 60vw;
+    border: 21px dotted;
+}
+
+.gap-lights1 {
+    border: 0;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    z-index: 100;
+    animation: theater-text 1s linear infinite;
+}
+
+.gap-lights2 {
+    border: 0;
+    right: 0;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    z-index: 100;
+    animation: theater-text 1s linear infinite;
+}
+
+#card-brown-first-lights {
+    width: 50vw;
+    height: 50vw;
+    right: 0;
+    border-color: #28160A;
+    animation: theater-text 800ms linear infinite;
+}
+
+#card-brown-second-lights {
+    width: 50vw;
+    height: 50vw;
+    border-color: #28160A;
+    animation: theater-text 800ms linear infinite;
+}
+
+#circleFirst-lights {
+    border-color: #E5C441;
+}
+
+#circleSecond-lights {
+    border-color: #761614;
+}
+
+#circleThird-lights {
+    border-color: #FCEFD6;
+}
+
+#circleFourth-lights {
+    border-color: #E73928;
+}
+
+#masks-lights {
+    width: 26vw;
+    height: 36vw;
+    border-color: #FCEFD6;
+    animation: theater-text 2s linear infinite;
+}
+
+#staging-lights {
+    width: 74vw;
+    height: 17vw;
+    border-color: #FCEFD6;
+    animation: theater-text 500ms linear infinite;
+}
+
+#square-row-white {
+    div {
         background-color: #FCEFD6;
     }
 }
-#opacity-top{
+
+#opacity-top {
     top: 0;
     background: linear-gradient(to top, rgb(40, 22, 10, 0), rgb(40, 22, 10, 1));
 }
-#opacity-bottom{
+
+#opacity-bottom {
     bottom: 0;
     background: linear-gradient(to top, rgb(40, 22, 10, 1), rgb(40, 22, 10, 0));
 }
-#paint-circle-first{
+
+#paint-circle-first {
     top: 5px;
     left: 5px;
     rotate: -30deg;
 }
-#paint-circle-second{
+
+#paint-circle-second {
     bottom: 5px;
     right: 5px;
     rotate: 30deg;
 }
-#paint-ticket-first{
+
+#paint-ticket-first {
     top: 15px;
     right: 5px;
     rotate: 28deg;
     animation: ticket-first-rotate 2s linear infinite;
 }
-#paint-ticket-second{
+
+#paint-ticket-second {
     bottom: 15px;
     left: 5px;
     rotate: -146deg;
     animation: ticket-second-rotate 2s linear infinite;
 }
-#paint-ticket-thrid{
+
+#paint-ticket-thrid {
     rotate: -17deg;
     animation: ticket-third-rotate 2s linear infinite;
 }
-#circle-orange{
+
+#circle-orange {
     background-color: #E73928;
     animation: mask-rotate 5s linear infinite;
 }
-#circle-brown-first{
+
+#circle-brown-first {
     background-color: #28160A;
     animation: first-arrow-rotate 5s linear infinite;
 }
-#circle-brown-second{
+
+#circle-brown-second {
     background-color: #28160A;
     animation: second-arrow-rotate 5s linear infinite;
 }
-#circle-blue-first{
+
+#circle-blue-first {
     background-color: #2A3596;
     animation: third-arrow-rotate 5s linear infinite;
 }
-#circle-blue-second{
+
+#circle-blue-second {
     background-color: #2A3596;
     animation: fourth-arrow-rotate 5s linear infinite;
 }
-#the-first-jump{
+
+#the-first-jump {
     border-color: #761614;
     background-color: #E5C441;
     color: #2A3596;
 }
-#the-second-jump{
+
+#the-second-jump {
     border-color: #FCEFD6;
     background-color: #761614;
     color: #FCEFD6;
 }
-#the-third-jump{
+
+#the-third-jump {
     border-color: #761614;
     background-color: #FCEFD6;
     color: #E73928;
 }
-#the-fourth-jump{
+
+#the-fourth-jump {
     border-color: #FCEFD6;
     background-color: #E73928;
     color: #E5C441;
 }
-#card-brown-first{
+
+#card-brown-first {
     background-color: #28160A;
     border-color: #FCEFD6;
     height: 50vw;
     position: absolute;
     bottom: 0;
     right: 0;
-    img{
+
+    img {
         width: 17vw;
         height: auto;
         position: absolute;
     }
+
     transition: all 2s ease;
 }
-#card-border-none-first{
+
+#card-border-none-first {
     border: 0;
     animation: masks-scroll 5s linear infinite;
     transition: all 2s ease;
     position: absolute;
     bottom: 0;
 }
-#card-brown-second{
+
+#card-brown-second {
     position: relative;
     display: flex;
     justify-content: space-between;
@@ -571,18 +747,21 @@ div{
     height: 50vw;
     position: absolute;
     bottom: 0;
-    h2{
+
+    h2 {
         font-family: "Kucheryavy";
         font-size: 8vw;
         color: #E5C441;
     }
-    p{
+
+    p {
         font-family: "BebasNeueCyrillic";
         font-size: 4vw;
         color: #FCEFD6;
     }
 }
-#card-border-none-second{
+
+#card-border-none-second {
     border: 0;
     animation: masks-scroll 5s linear infinite;
     transition: all 2s ease;
@@ -590,561 +769,746 @@ div{
     bottom: 0;
     right: 0;
 }
-#paint-red{
+
+#paint-red {
     background-color: #761614;
 }
-#paint-yellow{
+
+#paint-yellow {
     background-color: #E5C441;
-    h1, h2, h3, p{
+
+    h1,
+    h2,
+    h3,
+    p {
         color: #761614;
     }
 }
-#paint-blue{
+
+#paint-blue {
     background-color: #2A3596;
-    h1, h2, h3, p{
+
+    h1,
+    h2,
+    h3,
+    p {
         color: #FCEFD6;
     }
 }
-#paint-white{
+
+#paint-white {
     background-color: #FCEFD6;
-    h1, h2, h3, p{
+
+    h1,
+    h2,
+    h3,
+    p {
         color: #761614;
     }
 }
-#paint-orange{
+
+#paint-orange {
     background-color: #E73928;
-    h1, h2, h3, p{
+
+    h1,
+    h2,
+    h3,
+    p {
         color: #FCEFD6;
     }
 }
+
 @keyframes ticketAround1 {
-    0%, 100%{
+
+    0%,
+    100% {
         top: 15%;
         left: 6%;
         rotate: -12deg;
     }
-    16%{
+
+    16% {
         top: 40%;
         left: 35%;
         rotate: -102deg;
     }
-    33%{
+
+    33% {
         top: 15%;
         left: 60%;
         rotate: -192deg;
     }
-    57%{
+
+    57% {
         top: 70%;
         left: 60%;
         rotate: -282deg;
     }
-    76%{
+
+    76% {
         top: 70%;
         left: 6%;
         rotate: -192deg;
     }
 }
+
 @keyframes ticketAround2 {
-    0%, 100%{
+
+    0%,
+    100% {
         top: 15%;
         left: 60%;
         rotate: -168deg;
     }
-    24%{
+
+    24% {
         top: 70%;
         left: 60%;
         rotate: -258deg;
     }
-    41%{
+
+    41% {
         top: 70%;
         left: 6%;
         rotate: -348deg;
     }
-    65%{
+
+    65% {
         top: 15%;
         left: 6%;
         rotate: -438deg;
     }
-    81%{
+
+    81% {
         top: 40%;
         left: 35%;
         rotate: -348deg;
     }
 }
+
 @keyframes ticketAround3 {
-    0%, 100%{
+
+    0%,
+    100% {
         top: 70%;
         left: 60%;
         rotate: 170deg;
     }
-    16%{
+
+    16% {
         top: 70%;
         left: 6%;
         rotate: 260deg;
     }
-    40%{
+
+    40% {
         top: 15%;
         left: 6%;
         rotate: 350deg;
     }
-    54%{
+
+    54% {
         top: 40%;
         left: 15%;
         rotate: 440deg;
     }
-    76%{
+
+    76% {
         top: 15%;
         left: 60%;
         rotate: 350deg;
     }
 }
+
 @keyframes ticketAround4 {
-    0%, 100%{
+
+    0%,
+    100% {
         top: 40%;
         left: 35%;
         rotate: -168deg;
     }
-    14%{
+
+    14% {
         top: 15%;
         left: 60%;
         rotate: -258deg;
     }
-    36%{
+
+    36% {
         top: 70%;
         left: 60%;
         rotate: -348deg;
     }
-    61%{
+
+    61% {
         top: 70%;
         left: 6%;
         rotate: -438deg;
     }
-    83%{
+
+    83% {
         top: 15%;
         left: 6%;
         rotate: -348deg;
     }
 }
+
 @keyframes ticketAround5 {
-    0%, 100%{
+
+    0%,
+    100% {
         top: 70%;
         left: 6%;
         rotate: 7deg;
     }
-    24%{
+
+    24% {
         top: 15%;
         left: 6%;
         rotate: 97deg;
     }
-    40%{
+
+    40% {
         top: 40%;
         left: 35%;
         rotate: 187deg;
     }
-    52%{
+
+    52% {
         top: 15%;
         left: 60%;
         rotate: 277deg;
     }
-    76%{
+
+    76% {
         top: 70%;
         left: 60%;
         rotate: 187deg;
     }
 }
+
 @keyframes masks-jump {
-    0%, 100%{
+
+    0%,
+    100% {
         transform: translateY(0%);
     }
-    25%{
+
+    25% {
         transform: translateY(-5%);
     }
-    75%{
+
+    75% {
         transform: translateY(5%);
     }
 }
+
 @keyframes text-stroke-color {
-    0%{
+    0% {
         -webkit-text-stroke-color: #FCEFD6;
     }
-    50%{
+
+    50% {
         -webkit-text-stroke-color: #2A3596;
     }
-    100%{
+
+    100% {
         -webkit-text-stroke-color: #FCEFD6;
     }
 }
+
 @keyframes ticket-first-rotate {
-    0%{
+    0% {
         rotate: 28deg;
     }
-    50%{
+
+    50% {
         rotate: -28deg;
     }
-    100%{
+
+    100% {
         rotate: 28deg;
     }
 }
+
 @keyframes ticket-second-rotate {
-    0%{
+    0% {
         rotate: -146deg;
     }
-    50%{
+
+    50% {
         rotate: -190deg;
     }
-    100%{
+
+    100% {
         rotate: -146deg;
     }
 }
+
 @keyframes ticket-third-rotate {
-    0%{
+    0% {
         rotate: -17eg;
     }
-    50%{
+
+    50% {
         rotate: 17deg;
     }
-    100%{
+
+    100% {
         rotate: -17deg;
     }
 }
+
 @keyframes textTop1 {
-    0%{
+    0% {
         transform: translateY(0%)
     }
-    100%{
+
+    100% {
         transform: translateY(calc(-30% - 3vw))
     }
 }
+
 @keyframes textTop2 {
-    0%{
+    0% {
         transform: translateY(0%)
     }
-    100%{
+
+    100% {
         transform: translateY(calc(-30% - 6vw))
     }
 }
-@keyframes left-arrow-rotate{
-    0%{
+
+@keyframes left-arrow-rotate {
+    0% {
         rotate: 50deg;
     }
-    50%{
+
+    50% {
         rotate: 10deg;
     }
-    100%{
+
+    100% {
         rotate: 50deg;
     }
 }
-@keyframes right-arrow-rotate{
-    0%{
+
+@keyframes right-arrow-rotate {
+    0% {
         rotate: -50deg;
     }
-    50%{
+
+    50% {
         rotate: -10deg;
     }
-    100%{
+
+    100% {
         rotate: -50deg;
     }
 }
+
 @keyframes masks-scroll {
-    0%{
-    transform: translateY(0%)
+    0% {
+        transform: translateY(0%)
     }
-    100%{
+
+    100% {
         transform: translateY(calc(50% + 5px))
     }
 }
-@keyframes left-scroll{
-    0%{
+
+@keyframes left-scroll {
+    0% {
         transform: translateX(0%)
     }
-    100%{
+
+    100% {
         transform: translateX(calc(-2% - 9px))
     }
 }
-@keyframes right-scroll{
-    0%{
+
+@keyframes right-scroll {
+    0% {
         transform: translateX(0%)
     }
-    100%{
+
+    100% {
         transform: translateX(calc(4% + 100px))
     }
 }
-@keyframes theater-text{
-    0%{
+
+@keyframes theater-text {
+    0% {
         opacity: 1;
     }
-    20%{
+
+    20% {
         opacity: 7.5;
     }
-    40%{
+
+    40% {
         opacity: 5;
     }
-    60%{
+
+    60% {
         opacity: 2.5;
     }
-    80%{
+
+    80% {
         opacity: 0;
     }
-    100%{
+
+    100% {
         opacity: 1;
     }
 }
+
 @keyframes mask-rotate {
-    0%{
+    0% {
         rotate: 0deg;
     }
-    25%{
+
+    25% {
         rotate: 90deg;
     }
-    45%{
+
+    45% {
         rotate: 180deg;
     }
-    65%{
+
+    65% {
         rotate: 270deg;
     }
-    90%{
+
+    90% {
         rotate: 360deg;
     }
-    100%{
+
+    100% {
         rotate: 360deg;
-    }  
+    }
 }
+
 @keyframes first-arrow-rotate {
-    66%{
+    66% {
         rotate: 0deg;
     }
-    88%{
+
+    88% {
         rotate: -90deg;
     }
-    94%{
+
+    94% {
         rotate: -90deg;
     }
-    100%{
+
+    100% {
         rotate: 0deg;
     }
 }
+
 @keyframes third-arrow-rotate {
-    44%{
+    44% {
         rotate: 0deg;
     }
-    66%{
+
+    66% {
         rotate: -90deg;
     }
-    94%{
+
+    94% {
         rotate: -90deg;
     }
-    100%{
+
+    100% {
         rotate: 0deg;
     }
 }
+
 @keyframes second-arrow-rotate {
-    22%{
+    22% {
         rotate: 0deg;
     }
-    44%{
+
+    44% {
         rotate: -90deg;
     }
-    94%{
+
+    94% {
         rotate: -90deg;
     }
-    100%{
+
+    100% {
         rotate: 0deg;
     }
 }
+
 @keyframes fourth-arrow-rotate {
-    0%{
+    0% {
         rotate: 0deg;
     }
-    22%{
+
+    22% {
         rotate: -90deg;
     }
-    94%{
+
+    94% {
         rotate: -90deg;
     }
-    100%{
+
+    100% {
         rotate: 0deg;
     }
 }
+
 @keyframes masks-rotate {
-    0%{
+    0% {
         rotate: 0deg;
     }
-    25%{
+
+    25% {
         rotate: 90deg;
     }
-    50%{
+
+    50% {
         rotate: 180deg;
     }
-    75%{
+
+    75% {
         rotate: 270deg;
     }
-    100%{
+
+    100% {
         rotate: 360deg;
     }
 }
+
 @keyframes masks-scroll-mobile {
-    0%{
-    transform: translateY(0%)
+    0% {
+        transform: translateY(0%)
     }
-    100%{
+
+    100% {
         transform: translateY(calc(100% + 12px))
     }
 }
+
 @keyframes jump {
-    0%{
+    0% {
         margin-bottom: -25%;
     }
-    49%, 51%{
+
+    49%,
+    51% {
         transform: translateY(calc(-209%))
     }
-    50%{
+
+    50% {
         transform: translateY(calc(-210%))
     }
-    100%{
+
+    100% {
         margin-bottom: -25%;
     }
 }
+
 @keyframes jump-mobile {
-    0%{
+    0% {
         margin-bottom: -20%;
     }
-    49%, 51%{
+
+    49%,
+    51% {
         transform: translateY(calc(-209%))
     }
-    50%{
+
+    50% {
         transform: translateY(calc(-210%))
     }
-    100%{
+
+    100% {
         margin-bottom: -20%;
     }
 }
-.tape-row:hover{
+
+.tape-row:hover {
     animation-play-state: paused
 }
-#card-border-none-first:hover{
+
+#card-border-none-first:hover {
     animation-play-state: paused
 }
-#card-border-none-second:hover{
+
+#card-border-none-second:hover {
     animation-play-state: paused
 }
-#card-brown-first:hover{
-    img{
+
+#card-brown-first:hover {
+    img {
         animation-play-state: paused
     }
 }
+
 @media (max-width: 1024px) {
-    body{
+    body {
         gap: 8px;
     }
-    div{
+
+    div {
         border-radius: 16px;
         border: 17px solid;
     }
-    .staging{
+
+    .staging {
         width: 100vw;
         height: 25vw;
-        img{
+
+        img {
             height: 7vw;
             width: auto;
         }
-        h2{
+
+        h2 {
             font-size: 10vw;
         }
-        p{
+
+        p {
             font-size: 6vw;
         }
     }
-    .masks{
+
+    .masks {
         display: none;
     }
-    .paint{
+
+    .paint {
         width: 52vw;
         height: 24vw;
-        p{
+
+        p {
             font-size: 7vw;
             -webkit-text-stroke: #FCEFD6 4px;
         }
     }
-    .paint-circle{
+
+    .paint-circle {
         width: 8vw;
     }
-    .paint-ticket{
+
+    .paint-ticket {
         width: 12vw;
     }
-    .tape{
+
+    .tape {
         width: 48vw;
         height: 24vw;
         border: 12px solid;
         border-color: #E5C441;
     }
-    .card-row{
+
+    .card-row {
         gap: 8px;
     }
-    .the-third-section{
+
+    .the-third-section {
         gap: 8px;
     }
-    .tape-row-first{
-        div{
+
+    .tape-row-first {
+        div {
             height: 13vw;
             width: 13vw;
-            img{
+
+            img {
                 max-width: 55%;
             }
         }
     }
-    .the-fourth-section{
+
+    .the-fourth-section {
         gap: 8px;
     }
-    .card{
+
+    .card {
         gap: 8px;
     }
-    .jump-circle{
+
+    .jump-circle {
         padding-bottom: 8%;
-        p{
+
+        p {
             font-size: 2.5vw;
         }
     }
-    #paint-circle-first{
+
+    .lights {
+        border: 17px dotted;
+        border-radius: 18px;
+    }
+
+    .circle-lights {
+        border: 17px dotted;
+        border-radius: 18px;
+    }
+
+    #staging-lights {
+        width: 100vw;
+        height: 25vw;
+    }
+
+    #paint-circle-first {
         top: 3px;
         left: 3px;
     }
-    #paint-circle-second{
+
+    #paint-circle-second {
         bottom: 3px;
         right: 3px;
     }
-    #paint-ticket-first{
+
+    #paint-ticket-first {
         top: 10px;
         right: 3px;
     }
-    #paint-ticket-second{
+
+    #paint-ticket-second {
         bottom: 10px;
         left: 3px;
     }
+
+    #masks-lights {
+        display: none;
+    }
 }
+
 @media (max-width: 440px) {
-    body{
+    body {
         gap: 6px;
     }
-    div{
+
+    div {
         border-radius: 10px;
         border: 12px solid;
     }
-    .mobile{
-        display: flex;
-        flex-direction: row;
-        gap: 6px;
+
+    .mobile {
         border: 0;
     }
-    .the-first-section{
+
+    .the-first-section {
         gap: 0;
     }
-    .staging{
+
+    .staging {
         display: none;
     }
-    .mobile-reverse{
+
+    .mobile-reverse {
         flex-direction: row-reverse;
     }
-    .masks{
+
+    .masks {
         position: relative;
         overflow: hidden;
         display: flex;
@@ -1155,224 +1519,287 @@ div{
         height: 120vw;
         background-color: #E5C441;
         border-color: #761614;
-        img{
+
+        img {
             height: 110vw;
             width: auto;
         }
-        p{
+
+        p {
             font-size: 20vw;
             color: #761614;
             animation: theater-text 2s linear infinite;
         }
     }
-    .paint{
+
+    .paint {
         width: 100vw;
         height: 50vw;
-        p{
+
+        p {
             font-size: 15vw;
             -webkit-text-stroke: #FCEFD6 4px;
         }
     }
-    .card-opacity{
+
+    .card-opacity {
         height: 40%;
     }
-    .paint-circle{
+
+    .paint-circle {
         width: 16vw;
     }
-    .paint-ticket{
+
+    .paint-ticket {
         width: 24vw;
     }
-    .tape{
+
+    .tape {
         width: 100vw;
         height: 50vw;
         border: 8px solid;
         border-color: #E5C441;
     }
-    .card-row{
+
+    .card-row {
         gap: 6px;
     }
-    .the-second-section{
+
+    .the-second-section {
         gap: 6px;
         flex-direction: column;
     }
-    .jump-circle{
+
+    .jump-circle {
         width: 50vw;
         height: 100vw;
-        p{
+
+        p {
             font-size: 4.5vw;
         }
     }
-    /* .firstTicket{
-        top: 15%;
-        left: 6%;
-        rotate: -12deg;
-        animation: ticketAround1 7s linear infinite;
-    }
-    .secondTicket{
-        top: 15%;
-        right: 6%;
-        rotate: -168deg;
-        animation: ticketAround2 7s linear infinite;
-    }
-    .thirdTicket{
-        bottom: 15%;
-        right: 6%;
-        rotate: 170deg;
-        animation: ticketAround3 7s linear infinite;
-    }
-    .fourthTicket{
-        top: 40%;
-        left: 35%;
-        rotate: -168deg;
-        animation: ticketAround4 7s linear infinite;
-    }
-    .fifthTicket{
-        bottom: 15%;
-        left: 6%;
-        rotate: 7deg;
-        animation: ticketAround5 7s linear infinite;
-    } */
-    .card{
+
+    .card {
         gap: 6px;
         width: 100vw;
         height: 100vw;
     }
-    .circle{
+
+    .circle {
         width: 50vw;
         height: 50vw;
     }
-    .column-mobile{
+
+    .column-mobile {
         display: flex;
         flex-direction: column;
         gap: 6px;
     }
-    .the-third-section{
+
+    .the-third-section {
         width: 100vw;
         height: 200vw;
     }
-    .the-fourth-section{
+
+    .the-fourth-section {
         width: 100vw;
         height: 200vw;
     }
-    .card-paint{
+
+    .card-paint {
         width: 50vw;
         height: 50vw;
     }
-    .card-paint-top{
-        h2{
+
+    .card-paint-top {
+        h2 {
             font-size: 16vw;
         }
-        h3{
+
+        h3 {
             font-size: 6.5vw;
         }
-        p{
+
+        p {
             font-size: 6.5vw;
         }
     }
-    .card-paint-center{
-        h1{
+
+    .card-paint-center {
+        h1 {
             font-size: 11vw;
         }
     }
-    .card-paint-bottom{
-        p{
+
+    .card-paint-bottom {
+        p {
             font-size: 5.5vw;
         }
     }
-    .card-paint-border{
+
+    .card-paint-border {
         width: 50vw;
         height: 50vw;
     }
-    .tape-row-first{
-        div{
+
+    .tape-row-first {
+        div {
             height: 28vw;
             width: 25vw;
-            img{
+
+            img {
                 max-width: 70;
             }
         }
     }
-    .main{
+
+    .main {
         position: absolute;
         top: 6%;
     }
-    .roles{
+
+    .roles {
         position: absolute;
         top: 22%;
     }
-    .gapSix{
+
+    .gapSix {
         gap: 1vw;
     }
-    .gap15{
+
+    .gap15 {
         gap: 4vw;
     }
-    .goAnimation{
+
+    .goAnimation {
         gap: 8vw;
         animation: textTop2 4s linear infinite;
     }
-    .circle-jump{
+
+    .circle-jump {
         padding-bottom: -20%;
         animation: jump-mobile 2s linear infinite;
     }
-    #paint-circle-first{
+
+    .lights {
+        border: 12px dotted;
+        border-radius: 14px;
+    }
+
+    .circle-lights {
+        width: 50vw;
+        height: 100vw;
+        border: 12px dotted;
+        border-radius: 14px;
+    }
+
+    .gap-lights1 {
+        right: 0;
+        flex-direction: row-reverse;
+    }
+
+    .gap-lights2 {
+        left: 0;
+        bottom: 0;
+    }
+
+    #card-brown-first-lights {
+        width: 100vw;
+        height: 100vw;
+        bottom: 0;
+    }
+
+    #card-brown-second-lights {
+        width: 100vw;
+        height: 100vw;
+        bottom: 0;
+        z-index: 1000;
+    }
+
+    #masks-lights {
+        display: block;
+        width: 100vw;
+        height: 120vw;
+    }
+
+    #staging-lights {
+        display: none;
+    }
+
+    #paint-circle-first {
         top: 2px;
         left: 2px;
     }
-    #paint-circle-second{
+
+    #paint-circle-second {
         bottom: 2px;
         right: 2px;
     }
-    #paint-ticket-first{
+
+    #paint-ticket-first {
         top: 7px;
         right: 2px;
     }
-    #paint-ticket-second{
+
+    #paint-ticket-second {
         bottom: 7px;
         left: 2px;
     }
-    #circle-blue-second{
+
+    #circle-blue-second {
         display: none;
     }
-    #circle-blue-first{
+
+    #circle-blue-first {
         display: none;
     }
-    #circle-brown-second{
+
+    #circle-brown-second {
         display: none;
     }
-    #circle-brown-first{
+
+    #circle-brown-first {
         display: none;
     }
-    #circle-orange{
+
+    #circle-orange {
         display: none;
     }
-    #card-border-none-first{
+
+    #card-border-none-first {
         height: 100vw;
         position: absolute;
         top: calc(-100vw - 12px);
         animation: masks-scroll-mobile 5s linear infinite;
     }
-    #card-brown-first{
+
+    #card-brown-first {
         height: 100vw;
         position: absolute;
         bottom: 0;
         left: 0;
-        img{
+
+        img {
             width: 30vw;
         }
     }
-    #card-brown-second{
+
+    #card-brown-second {
         height: 100vw;
         position: absolute;
         bottom: 0;
         z-index: 100;
-        h2{
+
+        h2 {
             font-size: 14vw;
         }
-        p{
+
+        p {
             font-size: 8vw;
         }
     }
-    #card-border-none-second{
+
+    #card-border-none-second {
         height: 100vw;
         animation: masks-scroll-mobile 5s linear infinite;
         position: absolute;
