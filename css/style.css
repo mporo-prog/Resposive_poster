@@ -725,8 +725,6 @@ div {
         height: auto;
         position: absolute;
     }
-
-    transition: all 2s ease;
 }
 
 #card-border-none-first {
@@ -1342,12 +1340,6 @@ div {
 
 #card-border-none-second:hover {
     animation-play-state: paused
-}
-
-#card-brown-first:hover {
-    img {
-        animation-play-state: paused
-    }
 }
 
 @media (max-width: 1024px) {
